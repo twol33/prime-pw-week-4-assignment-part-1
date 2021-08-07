@@ -79,10 +79,24 @@ console.log('no items in array: ', getLast(0));
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
-function find( value, array ){
+const max = 3
 
+for (let v=0; v<array.length; v++){
 }
 
+function find( v, array ){
+ if ( v <= max ){
+   return true
+ }
+ else if ( v > max ){
+   return false;
+ }
+}
+
+find()
+console.log("find item 1 in array: ", find(1, array ));
+console.log('find item 5 in array: ', find(5, array ));
+console.log('find item 3 in array: ', find(3, array ));
 // ----------------------
 // Stretch Goals
 // ----------------------
