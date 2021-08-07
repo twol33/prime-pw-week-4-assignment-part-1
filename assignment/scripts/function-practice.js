@@ -40,17 +40,20 @@ multiplyThree()
 
 // 5. Function that will return true if a number is positive,
 //    or greater than zero, and false otherwise
-function isPositive( number ) {
+function isPositive( number ){
   if ( number > 0 ){
-    return;
-  }
-    return;
+    return true;
 }
+  else
+    return false;
+}
+
 // Call the function to test each outcome (true & false)
 // Write a separate console.log statement for each outcome
-console.log( 'isPositive - should say true', isPositive(3) );
-console.log( 'isPositive - should say false', isPositive(0) );
-console.log( 'isPositive - should say false', isPositive(-3) );
+isPositive()
+console.log( '3 is greater than 0 so,', isPositive(3) );
+console.log( '0 is equal to so, ', isPositive(0) );
+console.log( '-3 is less than so,', isPositive(-3) );
 
 
 // 6. Function to return the _last_ item in an array. If the
