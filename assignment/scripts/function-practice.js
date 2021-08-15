@@ -61,13 +61,13 @@ console.log( '-3 is less than so,', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the
 //    array is empty, return `undefined`.
-let array = ['sock', 'bag', 'shoe', 'hat']
-  console.log( array );
+let listBag = ['sock', 'bag', 'shoe', 'hat']
+  console.log( listBag );
 
-let lastElement = array[array.length - 1]
+let lastElement = listBag[listBag.length - 1]
 
 function getLast(){
-  if ( (array.length) === 0 ){
+  if ( (listBag.length) === 0 ){
     return 'undefined';
 }
   else {
@@ -81,22 +81,20 @@ console.log('last item of array is: ', getLast());
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 
+
 function find( value, array ){
+  for( x=0; x<listBag.length; x++ )
+  console.log( listBag[x] )
 
-  let( i=0, i<array.length, i++);{
-  console.log( array[i]);
+  if( value === listBag[x] ){
+   return true;
 }
-  if( value == array[i] )
-  return true;
-
   else{
     return false;
   }
 }
 
-console.log('find "bag in the array: ', find('bag'));
-
-
+console.log('item is in array: ', find('bag', listBag ))
 
 // ----------------------
 // Stretch Goals
