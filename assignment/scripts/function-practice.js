@@ -63,10 +63,11 @@ console.log( '-3 is less than so,', isPositive(-3) );
 //    array is empty, return `undefined`.
 let array = ['sock', 'bag', 'shoe', 'hat']
   console.log( array );
+
 let lastElement = array[array.length - 1]
 
-function getLast( array ){
-  if (array === 0){
+function getLast(){
+  if ( (array.length) === 0 ){
     return 'undefined';
 }
   else {
@@ -74,29 +75,29 @@ function getLast( array ){
   }
 }
 
-getLast()
 console.log('last item of array is: ', getLast());
-console.log('no items in array: ', getLast(0));
 
 // 7. Function to find a value in an array. Return true if the
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 
-let listFball = [ 'cleats', 'football', 'gloves' ]
+function find( value, array ){
 
-for( let i=0; i<listFball.length; i++ ){
-  console.log( listFball[i] );
-  function find( value, listFball ){
-    if( value === i ){
-      return true;
-    }
-    else
-      return false;
+  let( i=0, i<array.length, i++);{
+  console.log( array[i]);
+}
+  if( value == array[i] )
+  return true;
+
+  else{
+    return false;
   }
 }
-find()
-console.log('there is no 4th item in the array: ', find( 4, listFball[4] ));
-console.log('there is a 2nd item in the array: ', find( 2, listFball[2] ));
+
+console.log('find "bag in the array: ', find('bag'));
+
+
+
 // ----------------------
 // Stretch Goals
 // ----------------------
